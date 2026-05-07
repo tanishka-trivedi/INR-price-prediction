@@ -76,10 +76,6 @@ Final_code_ppt/
 ├── USD_INR_Exchange.csv      # Raw OHLC data
 ├── README.txt
 │
-├── stats_model1.py           # Statistical model — Part 1 (GARCH + EMA threshold direction)
-├── stats_model1.txt          # Notes / output for stats model 1
-├── stats_model2.py           # Statistical model — Part 2 (regime-based magnitude synthesis)
-├── stats_model2.txt          # Notes / output for stats model 2
 │
 ├── dec_tree.py               # Decision Tree direction + GARCH magnitude (best model)
 ├── dec_tree.txt              # Notes / output for decision tree
@@ -99,7 +95,6 @@ Final_code_ppt/
 ├── decision_tree.png         # Decision Tree predictions plot (2021)
 ├── knn.png                   # KNN predictions plot (2021)
 ├── polynomial_reg.png        # LDA + Ridge predictions plot (2021)
-├── Stats_model.png           # Statistical model predictions plot (2021)
 └── usd_inr.png               # USD/INR full time-series chart
 ```
 
@@ -166,7 +161,6 @@ All models use the same framework:
 
 | Model | Avg Abs Err (%) | Max Err (%) | Dir Acc (avg) |
 |---|---|---|---|
-| Statistical | 0.2362 | 1.3941 | — |
 | **Decision Tree** | **0.2082** | **1.1016** | **74.68%** |
 | KNN | 0.2357 | 1.5129 | 50.19% |
 | LDA + Ridge | 0.3456 | 1.5622 | 51.65% |
@@ -174,12 +168,3 @@ All models use the same framework:
 > A directional accuracy above ~51–55% is sufficient to generate positive-expectancy signals after transaction costs in a liquid FX pair like USD/INR.
 
 ---
-
-## Team
-
-| Name | Roll No. | Contribution |
-|---|---|---|
-| Kriti Agarwal | B24EE1037 | Feature engineering, GARCH modeling, statistical model, EDA, walk-forward framework |
-| Vanshika Mehta | B24EE1084 | Feature engineering, GARCH modeling, statistical model, EDA, walk-forward framework |
-| Tanishka Trivedi | B24EE1080 | Decision Tree, KNN, LDA+Ridge models, evaluation pipeline, model comparison |
-| Vempati Nityan | B24EE1087 | Decision Tree, KNN, LDA+Ridge models, evaluation pipeline, model comparison |
